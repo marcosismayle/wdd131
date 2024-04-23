@@ -108,11 +108,22 @@
     height: 400px;
   }
 
+  main p {
+    margin: 15px;
+  }
+
   aside {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+
+  aside img {
+    display: block;
+    margin: auto auto;
+    width: 80%;
+    
   }
 
   main h2, aside h2 {
