@@ -69,7 +69,10 @@
   /* Header */
 
   header {
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
   }
 
   header h1 {
@@ -90,7 +93,6 @@
   body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 40px auto;
   }
 
   nav, header, footer {
@@ -101,16 +103,16 @@
   main {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    height: 300px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 400px;
   }
 
   aside {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   main h2, aside h2 {
