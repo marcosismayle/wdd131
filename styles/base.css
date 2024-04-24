@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+:root {
+    /* color palette */
+    --primary-color:#333333;
+    --secondary-color:#000000;
+    --accent1-color:#CCCCCC;
+    --accent2-color:#FFFFFF;
+  
+    /* Font family */
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    /* Color sets */
+    --headline-color-on-white: #000000; 
+    --headline-color-on-color: #FFFFFF; 
+    --paragraph-color-on-white: #000000; 
+    --paragraph-color-on-color: #F5F1E3; 
+    --paragraph-background-color: #CCCCCC;
+    --nav-link-color: #FFFFFF;
+    --nav-background-color: #000000;
+    --nav-hover-link-color: #CCCCCC;
+  }
+  
+  /* General Sets */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-color: var(--accent1-color);
+    margin: 0px 150px 0 150px ;
+  }
+  
+  p {
+    font-family: var(--paragraph-font);
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+  }
+
+  header, footer {
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+  }
+
+  nav {
+    font-family: var(--paragraph-font);
+    background-color: var(--nav-background-color);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--headline-color-on-color);
+  }
+
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+  }
+
+  aside {
+    background-color: var(--accent2-color);
+  }
+
+  /* Header */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    padding: 10px;
+  }
+
+  /* Navegation*/
+
+  nav {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* Body */
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav, header, footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 400px;
+  }
+
+  main p {
+    margin: 15px;
+  }
+
+  aside {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  aside img {
+    display: block;
+    margin: auto auto;
+    width: 80%;
+    
+  }
+
+  main h2, aside h2 {
+    margin: 15px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  footer h2{
+    margin: 15px;
+  }
